@@ -13,5 +13,9 @@ cd cid_master
 ```
 python3 cid_master.py
 ```
+# What is cid?
+
+Information about an SD card is encoded in its internal card registries. One of these is the Card Identification (CID) Register, a 16 byte code that contains information that uniquely identifies the SD card, including the card serial number (PSN), manufacturer ID number (MID) and manufacture date (MDT). The CID register is set when the card is manufactured and cannot be changed after it is set. (According to SD card specification the information is only to be written once, however if a card does not conform to the specification this information could be changed!)
+
 
 
