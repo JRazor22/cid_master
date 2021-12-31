@@ -1,5 +1,7 @@
 # cid_master
 
+Only use in educational purposes!!!
+
 # General 
 You can use this script to change SD Card cid number!
 
