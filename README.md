@@ -1,6 +1,8 @@
 # cid_master
 
 # General 
+You can use this script to change SD Card cid number!
+
 This script work with Ubuntu 64-bit! To use this script you must have root privileges!
 
 Not every SD Card has a changeable cid number! SD Cards that have changeable cid number are some of Samsung EVO cards!
