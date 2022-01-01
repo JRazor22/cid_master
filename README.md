@@ -17,6 +17,8 @@ To use this script you need Python3!! [Python3 Install instractions](https://doc
 # Install:
 In Ubuntu terminal type:
 ```
+sudo apt-get update
+sudo apt-get install git
 git clone https://github.com/JRazor22/cid_master.git
 cd cid_master
 ```
