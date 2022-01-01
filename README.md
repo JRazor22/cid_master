@@ -2,7 +2,7 @@
 
 Only for use in educational purposes!!!
 
-Github repository page: [(https://github.com/JRazor22/cid_master](https://github.com/JRazor22/cid_master)
+Github repository page: [https://github.com/JRazor22/cid_master](https://github.com/JRazor22/cid_master)
 
 # General 
 You can use this script to change SD Card cid number!
