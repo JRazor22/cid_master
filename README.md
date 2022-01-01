@@ -15,6 +15,7 @@ In order to be able to read and change the SD Card cid number, you need an SD ca
 
 To use this script you need Python3!! [Python3 Install instractions](https://docs.python-guide.org/starting/install3/linux/).
 # Install:
+In Ubuntu terminal type:
 ```
 git clone https://github.com/JRazor22/cid_master.git
 cd cid_master
