@@ -25,7 +25,7 @@ If you do not see SD Card reader in output type:
 ```
 lsusb
 ```
-if you see your SD Card reader in output that means that your machine can read cid number!
+if you see your SD Card reader in output that means that your machine can not read cid number!
 
 
 # Install:
