@@ -30,8 +30,11 @@ cd cid_master
 python3 cid_master.py
 ```
 Script options:
+
     1. Clone SD Card CID
+
     2. Enter Manually SD Card CID
+    
     3. Read SD Card CID
 
 # What is cid?
