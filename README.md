@@ -1,6 +1,6 @@
 # cid_master
 
-Only for use in educational purposes!!!
+Only for use for educational purposes!!!
 
 Github repository page: [https://github.com/JRazor22/cid_master](https://github.com/JRazor22/cid_master)
 
@@ -11,10 +11,10 @@ This script work with Ubuntu 64-bit! To use this script you must have root privi
 
 Not every SD Card has a changeable cid number! SD Cards that have changeable cid number are some of Samsung EVO cards!
 
-In order to be able to read and change the SD Card cid number, you need an SD card adapter connected via PCI to your host computer. This is not possible with an external SD Card reader connected via a USB port. Even not all notebooks with build-in SD Card readers can read SD Card cid number, because SD Card adapter is not connected via PCI.
+To be able to read and change the SD Card cid number, you need an SD card reader connected via PCI to your host computer. This is not possible with an external SD Card reader connected via a USB port. Even not all notebooks with build-in SD Card readers can read SD Card cid number, because SD Card reader is not connected via PCI. Before using the script please check your SD Card reader connection.
 
 To use this script you need Python3!! [Python3 Install instractions](https://docs.python-guide.org/starting/install3/linux/).
-# SD Card conncention check:
+# SD Card reader connection:
 Discover do your machine can read SD Card cid number. In Ubuntu Terminal type:
 ```
 lspci
@@ -48,7 +48,7 @@ Script options:
 
 # What is cid?
 
-Information about an SD card is encoded in its internal card registries. One of these is the Card Identification (CID) Register, a 16 byte code that contains information that uniquely identifies the SD card, including the card serial number (PSN), manufacturer ID number (MID) and manufacture date (MDT). The CID register is set when the card is manufactured and cannot be changed after it is set. (According to SD card specification the information is only to be written once, however if a card does not conform to the specification this information could be changed!)
+Information about an SD card is encoded in its internal card registries. One of these is the Card Identification (CID) Register, a 16 byte code that contains information that uniquely identifies the SD card, including the card serial number (PSN), manufacturer ID number (MID), and manufacture date (MDT). The CID register is set when the card is manufactured and cannot be changed after it is set. (According to SD card specification the information is only to be written once, however if a card does not conform to the specification this information could be changed!)
 
 (source: [https://www.cameramemoryspeed.com/sd-memory-card-faq/reading-sd-card-cid-serial-psn-internal-numbers/](https://www.cameramemoryspeed.com/sd-memory-card-faq/reading-sd-card-cid-serial-psn-internal-numbers/))
 
