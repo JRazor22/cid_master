@@ -14,6 +14,18 @@ Not every SD Card has a changeable cid number! SD Cards that have changeable cid
 In order to be able to read and change the SD Card cid number, you need an SD card adapter connected via PCI to your host computer. This is not possible with an external SD Card reader connected via a USB port. Even not all notebooks with build-in SD Card readers can read SD Card cid number, because SD Card adapter is not connected via PCI.
 
 To use this script you need Python3!! [Python3 Install instractions](https://docs.python-guide.org/starting/install3/linux/).
+# SD Card conncention check:
+Discover do your machine can read SD Card cid number. In Ubuntu Terminal type:
+```
+lspci
+```
+and if you see your SD Card reader in output that means that you can read cid!
+
+If you do not see SD Card reader in output type:
+```
+lsusb
+```
+and if you see your SD Card reader in output that means that you can't read cid!
 # Install:
 Install git (optional):
 ```
