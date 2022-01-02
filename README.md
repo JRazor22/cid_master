@@ -19,13 +19,15 @@ Discover if your machine can read SD Card cid number, in Ubuntu Terminal type:
 ```
 lspci
 ```
-and if you see your SD Card reader in output that means that you can read cid!
+if you see your SD Card reader in output that means that your machine can read cid number!
 
 If you do not see SD Card reader in output type:
 ```
 lsusb
 ```
-and if you see your SD Card reader in output that means that you can't read cid!
+if you see your SD Card reader in output that means that your machine can read cid number!
+
+
 # Install:
 Install git (optional):
 ```
