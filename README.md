@@ -1,6 +1,6 @@
 # cid_master
 
-Only for use for educational purposes!!!
+Only for use in educational purposes!!!
 
 Github repository page: [https://github.com/JRazor22/cid_master](https://github.com/JRazor22/cid_master)
 
