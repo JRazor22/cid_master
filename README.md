@@ -15,7 +15,7 @@ To be able to read and change the SD Card cid number, you need an SD card reader
 
 To use this script you need Python3!! [Python3 Install instractions](https://docs.python-guide.org/starting/install3/linux/).
 # SD Card reader connection:
-Discover if your machine can read SD Card cid number. In Ubuntu Terminal type:
+Discover if your machine can read SD Card cid number, in Ubuntu Terminal type:
 ```
 lspci
 ```
