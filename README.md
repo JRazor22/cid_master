@@ -38,6 +38,7 @@ Copy repository in your host:
 ```
 git clone https://github.com/JRazor22/cid_master.git
 cd cid_master
+sudo chmod 777 mmc
 ```
 # Usage:
 ```
