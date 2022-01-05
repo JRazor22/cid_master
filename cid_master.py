@@ -43,17 +43,17 @@ if (option != "1") and (option != "2") and (option != "3"):
     print("\nERROR: No option or Wrong option selected, Please run script again and choose one of the listed options: 1, 2 or 3!!!\n")
 #option 1
 if option == "1":
-    print("\nPlease enter your orginal sd card, wait for 10 seconds and press ENTER! ")
+    print("\nPlease enter your original sd card, wait for 10 seconds and press ENTER! ")
     enter = input()
     if enter == "":
         find = os.popen('sudo find /sys -name cid -print').read()
         if find != "":
-            orginal_cid = os.popen('cat %s'%find).read()
+            original_cid = os.popen('cat %s'%find).read()
         else:
             print("ERROR: No SD Card, please insert SD Card and run script again! \n")
             exit()
-        print("Orginal SD Card CID number is:",orginal_cid)
-        print("Please remove orginal SD Card and press ENTER!")
+        print("Original SD Card CID number is:",original_cid)
+        print("Please remove original SD Card and press ENTER!")
         enter1 = input()
         if enter1 == "":
             print("Please enter your SD Card with changeable CID, wait for 10 seconds and press ENTER!")
@@ -68,7 +68,7 @@ if option == "1":
                     exit()
                 try:
                     print("Writing new CID...")
-                    process = subprocess.Popen('sudo ./mmc prog_cid /dev/mmcblk0 %s'%orginal_cid, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+                    process = subprocess.Popen('sudo ./mmc prog_cid /dev/mmcblk0 %s'%original_cid, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
                     time.sleep(10)
                     output = process.communicate()[0].decode("ascii")
                     #print(output)
@@ -87,13 +87,13 @@ if option == "1":
                 except Lock:
                     print("\nSD Card state is Read-only, please remove SD Card Lock and try again!\n")
                     exit()
-                print("\nEject the SD Card, wait for 10 seconds and insert it again and press ENTER!")
+                print("\nUnmount the SD Card, wait for 10 seconds and insert it again and press ENTER!")
                 enter3 = input()
                 if enter3 == "":
                     find = os.popen('sudo find /sys -name cid -print').read()
                 if find != "":
                     control_cid = os.popen('cat %s' % find).read()
-                    if control_cid == orginal_cid:
+                    if control_cid == original_cid:
                         print("Congratulation, SD Card CID is successfully cloned!!!\n")
                     else:
                         print("ERROR: Something went wrong, please make sure that your SD Card is with changeable and try again!")
@@ -159,7 +159,7 @@ if option == "2":
             except Length:
                 print("\nERROR: CID should be 32 chars long! Two chars are one hex byte!\n")
                 exit()
-            print("\nEject the SD Card, wait for 10 seconds and insert it again and press ENTER!")
+            print("\nUnmount the SD Card, wait for 10 seconds and insert it again and press ENTER!")
             enter3 = input()
             if enter3 == "":
                 find = os.popen('sudo find /sys -name cid -print').read()
@@ -179,8 +179,8 @@ if option == "2":
 if option == "3":
     find = os.popen('sudo find /sys -name cid -print').read()
     if find != "":
-        orginal_cid = os.popen('cat %s' % find).read()
-        print("\nSD Card CID number is:",orginal_cid)
+        original_cid = os.popen('cat %s' % find).read()
+        print("\nSD Card CID number is:",original_cid)
     else:
         print("\nERROR: No SD Card, please enter SD Card and run script again! \n")
         exit()
