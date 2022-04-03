@@ -34,7 +34,7 @@ Install git (optional):
 sudo apt-get update
 sudo apt-get install git
 ```
-Copy repository in your host:
+Copy repository on your host:
 ```
 git clone https://github.com/JRazor22/cid_master.git
 cd cid_master
